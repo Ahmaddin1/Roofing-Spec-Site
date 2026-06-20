@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 function TableOfContents({ items, activeId }) {
   return (
-    <nav className="rounded-[16px] border border-[#DDE3ED] bg-white p-5 shadow-[0_14px_34px_rgba(27,58,107,0.06)]">
+    <nav className="rounded-2xl border border-[#DDE3ED] bg-white p-5 shadow-[0_14px_34px_rgba(27,58,107,0.06)]">
       <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[#1B3A6B]">
         Table of Contents
       </p>
@@ -55,7 +55,7 @@ function TableOfContents({ items, activeId }) {
 
 function FAQItem({ faq, isOpen, onToggle }) {
   return (
-    <div className="rounded-[12px] border border-[#DDE3ED] bg-white">
+    <div className="rounded-xl border border-[#DDE3ED] bg-white">
       <button
         type="button"
         onClick={onToggle}
@@ -113,7 +113,7 @@ function MidArticleCTA() {
   return (
     <div
       ref={bannerRef}
-      className="my-12 rounded-[12px] bg-[#1B3A6B] px-8 py-7 text-white shadow-[0_18px_35px_rgba(27,58,107,0.18)]"
+      className="my-12 rounded-xl bg-[#1B3A6B] px-8 py-7 text-white shadow-[0_18px_35px_rgba(27,58,107,0.18)]"
     >
       <h3 className="text-[1.375rem] font-semibold leading-[1.3]">Seeing Any of These Signs?</h3>
       <p className="mt-3 text-base leading-8 text-white/75">
@@ -132,7 +132,7 @@ function MidArticleCTA() {
 
 function InlineImage({ src, alt, caption }) {
   return (
-    <figure className="my-10 overflow-hidden rounded-[12px] border border-[#DDE3ED] bg-white shadow-[0_14px_34px_rgba(27,58,107,0.06)]">
+    <figure className="my-10 overflow-hidden rounded-xl border border-[#DDE3ED] bg-white shadow-[0_14px_34px_rgba(27,58,107,0.06)]">
       <Image
         src={src}
         alt={alt}
@@ -207,7 +207,7 @@ export default function BlogPostTemplate({ post }) {
   }, [post.toc]);
 
   return (
-    <div className="-mt-28 bg-white md:-mt-32">
+    <div className="bg-white md:-mt-16">
       <section ref={headerRef} className="bg-white px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <span className="inline-flex rounded-full bg-[#D6E4F7] px-4 py-2 text-sm font-semibold text-[#1B3A6B]">
@@ -215,7 +215,7 @@ export default function BlogPostTemplate({ post }) {
           </span>
           <h1
             ref={titleRef}
-            className="mt-6 max-w-[800px] text-[clamp(2.75rem,6vw,4rem)] font-bold leading-[1.1] text-[#1A1A1A]"
+            className="mt-6 max-w-200 text-[clamp(2.75rem,6vw,4rem)] font-bold leading-[1.1] text-[#1A1A1A]"
           >
             {post.title}
           </h1>
@@ -226,7 +226,7 @@ export default function BlogPostTemplate({ post }) {
             <span aria-hidden="true">&middot;</span>
             <span>{post.readTime}</span>
           </div>
-          <div ref={imageRef} className="mt-8 overflow-hidden rounded-[12px]">
+          <div ref={imageRef} className="mt-8 overflow-hidden rounded-xl">
             <Image
               src={post.featuredImage}
               alt={post.featuredAlt}
@@ -234,7 +234,7 @@ export default function BlogPostTemplate({ post }) {
               height={900}
               priority
               sizes="(min-width: 1024px) 80vw, 100vw"
-              className="aspect-[16/9] w-full object-cover"
+              className="aspect-video w-full object-cover"
             />
           </div>
         </div>
@@ -276,7 +276,7 @@ export default function BlogPostTemplate({ post }) {
 
             <h2
               id="how-long-does-a-roof-last"
-              className="mt-14 text-[1.75rem] font-bold leading-[1.25] text-[#1B3A6B]"
+              className="mt-14 text-[1.75rem] font-bold leading-tight text-[#1B3A6B]"
             >
               How Long Does a Roof Actually Last?
             </h2>
@@ -313,7 +313,7 @@ export default function BlogPostTemplate({ post }) {
 
             <h2
               id="warning-signs"
-              className="mt-14 text-[1.75rem] font-bold leading-[1.25] text-[#1B3A6B]"
+              className="mt-14 text-[1.75rem] font-bold leading-tight text-[#1B3A6B]"
             >
               7 Warning Signs You Need a Roof Replacement
             </h2>
@@ -435,7 +435,7 @@ export default function BlogPostTemplate({ post }) {
 
             <h2
               id="repair-vs-replace"
-              className="mt-14 text-[1.75rem] font-bold leading-[1.25] text-[#1B3A6B]"
+              className="mt-14 text-[1.75rem] font-bold leading-tight text-[#1B3A6B]"
             >
               Repair vs Replace: How to Decide
             </h2>
@@ -475,7 +475,7 @@ export default function BlogPostTemplate({ post }) {
 
             <h2
               id="replacement-cost"
-              className="mt-14 text-[1.75rem] font-bold leading-[1.25] text-[#1B3A6B]"
+              className="mt-14 text-[1.75rem] font-bold leading-tight text-[#1B3A6B]"
             >
               What Does a Roof Replacement Cost in Austin?
             </h2>
@@ -506,7 +506,7 @@ export default function BlogPostTemplate({ post }) {
 
             <h2
               id="acting-early"
-              className="mt-14 text-[1.75rem] font-bold leading-[1.25] text-[#1B3A6B]"
+              className="mt-14 text-[1.75rem] font-bold leading-tight text-[#1B3A6B]"
             >
               Why Acting Early Saves You Money
             </h2>
@@ -536,7 +536,7 @@ export default function BlogPostTemplate({ post }) {
 
             <h2
               id="faq"
-              className="mt-14 text-[1.75rem] font-bold leading-[1.25] text-[#1B3A6B]"
+              className="mt-14 text-[1.75rem] font-bold leading-tight text-[#1B3A6B]"
             >
               Frequently Asked Questions About Roof Replacement in Austin
             </h2>
@@ -552,9 +552,9 @@ export default function BlogPostTemplate({ post }) {
             </div>
           </article>
 
-          <aside className="lg:sticky lg:top-[100px] lg:self-start">
+          <aside className="lg:sticky lg:top-25 lg:self-start">
             <div className="space-y-5">
-              <div className="rounded-[16px] bg-[#1B3A6B] p-6 text-white shadow-[0_18px_35px_rgba(27,58,107,0.18)]">
+              <div className="rounded-2xl bg-[#1B3A6B] p-6 text-white shadow-[0_18px_35px_rgba(27,58,107,0.18)]">
                 <h3 className="text-xl font-semibold leading-[1.3]">
                   Get a Free Inspection - Call {phoneDisplay}
                 </h3>
@@ -564,7 +564,7 @@ export default function BlogPostTemplate({ post }) {
                 </p>
                 <a
                   href={`tel:${phoneHref}`}
-                  className="mt-5 inline-flex w-full items-center justify-center rounded-full bg-[#F97316] px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-[#E86610]"
+                  className="mt-5 inline-flex w-full items-center justify-center rounded-lg bg-[#F97316] px-5 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-[#E86610]"
                 >
                   Call Now
                 </a>
@@ -572,7 +572,7 @@ export default function BlogPostTemplate({ post }) {
 
               <TableOfContents items={post.toc} activeId={activeId} />
 
-              <div className="rounded-[16px] border border-[#DDE3ED] bg-white p-5 shadow-[0_14px_34px_rgba(27,58,107,0.06)]">
+              <div className="rounded-2xl border border-[#DDE3ED] bg-white p-5 shadow-[0_14px_34px_rgba(27,58,107,0.06)]">
                 <p className="text-sm font-semibold uppercase tracking-[0.08em] text-[#1B3A6B]">
                   Related Services
                 </p>
@@ -581,7 +581,7 @@ export default function BlogPostTemplate({ post }) {
                     <Link
                       key={service.href}
                       href={service.href}
-                      className="group block rounded-[12px] border border-[#DDE3ED] bg-[#F8FAFC] p-4 transition duration-200 hover:border-[#1B3A6B]"
+                      className="group block rounded-xl border border-[#DDE3ED] bg-[#F8FAFC] p-4 transition duration-200 hover:border-[#1B3A6B]"
                     >
                       <p className="font-semibold text-[#1B3A6B]">{service.title}</p>
                       <p className="mt-1 text-sm leading-6 text-[#6B7280]">{service.description}</p>

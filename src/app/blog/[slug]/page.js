@@ -6,8 +6,9 @@ export function generateStaticParams() {
   return blogPosts.map((post) => ({ slug: post.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const post = blogPostMap[params.slug];
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const post = blogPostMap[slug];
 
   if (!post) {
     return {};
@@ -22,8 +23,9 @@ export function generateMetadata({ params }) {
   };
 }
 
-export default function BlogPostPage({ params }) {
-  const post = blogPostMap[params.slug];
+export default async function BlogPostPage({ params }) {
+  const { slug } = await params;
+  const post = blogPostMap[slug];
 
   if (!post) {
     notFound();

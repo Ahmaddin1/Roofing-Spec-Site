@@ -81,7 +81,7 @@ function ServiceHero({ service }) {
             ref={(element) => {
               textRefs.current[1] = element;
             }}
-            className="mt-5 max-w-[650px] text-[clamp(2.75rem,6vw,4.25rem)] font-bold leading-[1.1]"
+            className="mt-5 max-w-162.5 text-[clamp(2.75rem,6vw,4.25rem)] font-bold leading-[1.1]"
           >
             {service.name} in {city}, {state}.
           </h1>
@@ -101,13 +101,13 @@ function ServiceHero({ service }) {
           >
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center rounded-full bg-[#F97316] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:scale-[1.04] hover:bg-[#E86610]"
+              className="inline-flex items-center justify-center rounded-lg bg-[#F97316] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:scale-[1.04] hover:bg-[#E86610]"
             >
               Get a Free Inspection
             </Link>
             <a
               href={`tel:${phoneHref}`}
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white hover:text-[#1B3A6B]"
+              className="inline-flex items-center justify-center gap-2 rounded-lg border border-white px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white hover:text-[#1B3A6B]"
             >
               <Phone size={16} strokeWidth={2} />
               Call {phoneDisplay}
@@ -117,7 +117,7 @@ function ServiceHero({ service }) {
 
         <div
           ref={imageRef}
-          className="overflow-hidden rounded-[16px] border border-white/10 shadow-[0_28px_60px_rgba(15,37,68,0.28)]"
+          className="overflow-hidden rounded-2xl border border-white/10 shadow-[0_28px_60px_rgba(15,37,68,0.28)]"
         >
           <Image
             src={service.heroImage}
@@ -126,7 +126,7 @@ function ServiceHero({ service }) {
             height={900}
             priority
             sizes="(min-width: 1024px) 45vw, 100vw"
-            className="h-full min-h-[360px] w-full object-cover"
+            className="h-full min-h-90 w-full object-cover"
           />
         </div>
       </div>
@@ -404,7 +404,7 @@ function ProcessSection({ service }) {
                 ref={(element) => {
                   stepRefs.current[index] = element;
                 }}
-                className="relative rounded-[12px] border border-[#DDE3ED] bg-[#F8FAFC] px-6 py-8 shadow-[0_18px_35px_rgba(15,37,68,0.06)] lg:text-center"
+                className="relative rounded-xl border border-[#DDE3ED] bg-[#F8FAFC] px-6 py-8 shadow-[0_18px_35px_rgba(15,37,68,0.06)] lg:text-center"
               >
                 <div className="flex items-start gap-4 lg:block">
                   <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#1B3A6B] text-lg font-bold text-white">
@@ -490,7 +490,7 @@ function GallerySection({ service }) {
               ref={(element) => {
                 imageRefs.current[index] = element;
               }}
-              className="overflow-hidden rounded-[12px] border border-[#DDE3ED] bg-white shadow-[0_14px_34px_rgba(27,58,107,0.08)]"
+              className="overflow-hidden rounded-xl border border-[#DDE3ED] bg-white shadow-[0_14px_34px_rgba(27,58,107,0.08)]"
             >
               <Image
                 src={image}
@@ -582,7 +582,7 @@ function TestimonialsSection({ service }) {
 
 function FAQItem({ faq, isOpen, onToggle }) {
   return (
-    <div className="rounded-[12px] border border-[#DDE3ED] bg-white">
+    <div className="rounded-xl border border-[#DDE3ED] bg-white">
       <button
         type="button"
         onClick={onToggle}
@@ -655,7 +655,7 @@ function FAQSection({ service }) {
 
   return (
     <section ref={sectionRef} className="bg-[#D6E4F7] px-4 py-20 sm:px-6 lg:px-8">
-      <div className="mx-auto max-w-[800px]">
+      <div className="mx-auto max-w-200">
         <h2
           ref={headingRef}
           className="text-center text-[clamp(2rem,4vw,2.9rem)] font-bold leading-[1.15] text-[#1B3A6B]"
