@@ -1,22 +1,4 @@
-import {
-  ClipboardCheck,
-  CloudRainWind,
-  Hammer,
-  Search,
-  Shield,
-  Trash2,
-  Layers3,
-  Droplets,
-  HardHat,
-  CheckCircle2,
-  Wrench,
-  Eye,
-  FileCheck2,
-  Home,
-  Gauge,
-  Sparkles,
-  Umbrella,
-} from "lucide-react";
+import { ClipboardCheck, CloudRainWind, Hammer, Search, Shield } from "lucide-react";
 
 export const city = "Austin";
 export const state = "Texas";
@@ -74,32 +56,32 @@ export const servicePages = [
     ],
     included: [
       {
-        icon: Trash2,
+        icon: "Trash2",
         title: "Full Tear-Off & Disposal",
         description: "We remove the old roofing materials completely and haul away debris for a clean reset.",
       },
       {
-        icon: Layers3,
+        icon: "Layers3",
         title: "Decking Inspection & Repair",
         description: "Our team checks the underlying roof deck and replaces compromised sections before new materials go on.",
       },
       {
-        icon: Droplets,
+        icon: "Droplets",
         title: "Ice & Water Shield Installation",
         description: "We install upgraded underlayment protection in vulnerable areas to help guard against moisture intrusion.",
       },
       {
-        icon: Hammer,
+        icon: "Hammer",
         title: "New Shingle Installation",
         description: "Your new roofing system is installed with attention to ventilation, pattern consistency, and code-ready workmanship.",
       },
       {
-        icon: Shield,
+        icon: "Shield",
         title: "Flashing & Ridge Cap Updates",
         description: "We replace critical transition materials so the new system performs as one complete roof.",
       },
       {
-        icon: CheckCircle2,
+        icon: "CheckCircle2",
         title: "Final Cleanup & Inspection",
         description: "We finish with a thorough cleanup, magnetic nail sweep, and final walkthrough with the homeowner.",
       },
@@ -190,12 +172,12 @@ export const servicePages = [
       { label: "Spiking energy bills", description: "Roof leaks and ventilation issues can impact insulation performance and indoor comfort." },
     ],
     included: [
-      { icon: Wrench, title: "Leak Diagnosis", description: "We trace the source of the issue so the repair addresses the cause, not just the symptom." },
-      { icon: Shield, title: "Shingle & Flashing Repair", description: "We repair vulnerable roofing materials in the areas most likely to fail first." },
-      { icon: CloudRainWind, title: "Storm Spot Repairs", description: "Targeted repairs help stabilize damage after wind and hail events." },
-      { icon: Gauge, title: "Ventilation Check", description: "We look for heat and airflow issues that may be accelerating roof wear." },
-      { icon: FileCheck2, title: "Photo Documentation", description: "Homeowners receive clear visuals that explain what we found and what we fixed." },
-      { icon: CheckCircle2, title: "Final Repair Review", description: "We confirm the repaired area is secure and walk you through the finished work." },
+      { icon: "Wrench", title: "Leak Diagnosis", description: "We trace the source of the issue so the repair addresses the cause, not just the symptom." },
+      { icon: "Shield", title: "Shingle & Flashing Repair", description: "We repair vulnerable roofing materials in the areas most likely to fail first." },
+      { icon: "CloudRainWind", title: "Storm Spot Repairs", description: "Targeted repairs help stabilize damage after wind and hail events." },
+      { icon: "Gauge", title: "Ventilation Check", description: "We look for heat and airflow issues that may be accelerating roof wear." },
+      { icon: "FileCheck2", title: "Photo Documentation", description: "Homeowners receive clear visuals that explain what we found and what we fixed." },
+      { icon: "CheckCircle2", title: "Final Repair Review", description: "We confirm the repaired area is secure and walk you through the finished work." },
     ],
     process: [
       { title: "Free Roof Inspection", description: "We inspect the roof, attic clues, and visible problem areas to identify what is happening." },
@@ -241,12 +223,12 @@ export const servicePages = [
       { label: "Insurance documentation needed", description: "A thorough inspection can help clarify visible storm-related damage and roof condition." },
     ],
     included: [
-      { icon: Eye, title: "Surface Condition Review", description: "We examine shingles, flashing, penetrations, and drainage points for visible wear or failure." },
-      { icon: Home, title: "Structural Observation", description: "We look for sagging, soft spots, or other signs that deeper roofing issues may be present." },
-      { icon: CloudRainWind, title: "Storm Damage Check", description: "Hail and wind impact areas are reviewed closely to spot damage that may not be obvious from below." },
-      { icon: Gauge, title: "Ventilation Assessment", description: "We evaluate airflow and heat-related conditions that can shorten roof life in Austin." },
-      { icon: FileCheck2, title: "Photo Findings Summary", description: "Clear photos and explanations help you understand what we found without confusion." },
-      { icon: Sparkles, title: "Action Plan Recommendations", description: "You receive honest next steps, whether that means repair, monitoring, or replacement planning." },
+      { icon: "Eye", title: "Surface Condition Review", description: "We examine shingles, flashing, penetrations, and drainage points for visible wear or failure." },
+      { icon: "Home", title: "Structural Observation", description: "We look for sagging, soft spots, or other signs that deeper roofing issues may be present." },
+      { icon: "CloudRainWind", title: "Storm Damage Check", description: "Hail and wind impact areas are reviewed closely to spot damage that may not be obvious from below." },
+      { icon: "Gauge", title: "Ventilation Assessment", description: "We evaluate airflow and heat-related conditions that can shorten roof life in Austin." },
+      { icon: "FileCheck2", title: "Photo Findings Summary", description: "Clear photos and explanations help you understand what we found without confusion." },
+      { icon: "Sparkles", title: "Action Plan Recommendations", description: "You receive honest next steps, whether that means repair, monitoring, or replacement planning." },
     ],
     process: [
       { title: "Schedule Inspection", description: "We set a convenient time to review the roof and discuss the concerns that prompted the visit." },
@@ -292,12 +274,12 @@ export const servicePages = [
       { label: "Ceiling spots appearing suddenly", description: "Fresh interior staining often shows up after wind-driven rain or hail-related openings." },
     ],
     included: [
-      { icon: Umbrella, title: "Emergency Damage Assessment", description: "We inspect the roof promptly to identify urgent vulnerabilities and next-step priorities." },
-      { icon: FileCheck2, title: "Photo & Damage Documentation", description: "Detailed visual records help homeowners better understand storm impact and repair needs." },
-      { icon: Shield, title: "Temporary Protection Measures", description: "We can secure exposed areas to help reduce further moisture intrusion while a plan is finalized." },
-      { icon: CloudRainWind, title: "Wind & Hail Repair Planning", description: "We create a service scope based on the specific storm-related issues affecting your roof." },
-      { icon: Wrench, title: "Targeted Restoration Work", description: "Repairs or replacements are performed based on the extent and distribution of damage." },
-      { icon: CheckCircle2, title: "Final Condition Review", description: "We review the finished work with you and confirm the roof is restored and secure." },
+      { icon: "Umbrella", title: "Emergency Damage Assessment", description: "We inspect the roof promptly to identify urgent vulnerabilities and next-step priorities." },
+      { icon: "FileCheck2", title: "Photo & Damage Documentation", description: "Detailed visual records help homeowners better understand storm impact and repair needs." },
+      { icon: "Shield", title: "Temporary Protection Measures", description: "We can secure exposed areas to help reduce further moisture intrusion while a plan is finalized." },
+      { icon: "CloudRainWind", title: "Wind & Hail Repair Planning", description: "We create a service scope based on the specific storm-related issues affecting your roof." },
+      { icon: "Wrench", title: "Targeted Restoration Work", description: "Repairs or replacements are performed based on the extent and distribution of damage." },
+      { icon: "CheckCircle2", title: "Final Condition Review", description: "We review the finished work with you and confirm the roof is restored and secure." },
     ],
     process: [
       { title: "Post-Storm Inspection", description: "We examine the roof soon after the event to identify obvious and less visible damage." },
@@ -343,12 +325,12 @@ export const servicePages = [
       { label: "Pooling water after storms", description: "If runoff is not moving away efficiently, the gutter and downspout layout may need correction." },
     ],
     included: [
-      { icon: ClipboardCheck, title: "Drainage System Evaluation", description: "We assess existing gutter condition, slope, and downspout performance before recommending work." },
-      { icon: Wrench, title: "Leak & Sag Repair", description: "Loose sections, failing seams, and drainage trouble spots are corrected for better flow." },
-      { icon: Layers3, title: "New Gutter Installation", description: "We install properly sized gutter runs that match the home and roofline needs." },
-      { icon: Droplets, title: "Downspout Placement Review", description: "Runoff is directed more effectively to help protect landscaping and foundations." },
-      { icon: Shield, title: "Roofline Protection Focus", description: "Our recommendations consider how the gutter system supports the roof, fascia, and siding together." },
-      { icon: CheckCircle2, title: "Final Flow Check", description: "We finish by confirming the system is secure and draining as intended." },
+      { icon: "ClipboardCheck", title: "Drainage System Evaluation", description: "We assess existing gutter condition, slope, and downspout performance before recommending work." },
+      { icon: "Wrench", title: "Leak & Sag Repair", description: "Loose sections, failing seams, and drainage trouble spots are corrected for better flow." },
+      { icon: "Layers3", title: "New Gutter Installation", description: "We install properly sized gutter runs that match the home and roofline needs." },
+      { icon: "Droplets", title: "Downspout Placement Review", description: "Runoff is directed more effectively to help protect landscaping and foundations." },
+      { icon: "Shield", title: "Roofline Protection Focus", description: "Our recommendations consider how the gutter system supports the roof, fascia, and siding together." },
+      { icon: "CheckCircle2", title: "Final Flow Check", description: "We finish by confirming the system is secure and draining as intended." },
     ],
     process: [
       { title: "Inspection & Drainage Review", description: "We inspect the current gutter layout and identify where water management is breaking down." },

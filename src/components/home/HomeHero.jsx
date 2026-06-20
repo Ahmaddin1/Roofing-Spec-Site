@@ -7,8 +7,7 @@ import { useGSAP } from "@gsap/react";
 import { gsap } from "gsap";
 import { BadgeCheck, FileText, ShieldCheck } from "lucide-react";
 
-const headline =
-  "Austin's Trusted Roofing Experts for Repairs & Replacements";
+const headline = "Austin's Trusted Roofing Experts for Repairs & Replacements";
 
 const trustItems = [
   { label: "Licensed & Insured", icon: ShieldCheck },
@@ -42,7 +41,7 @@ export default function HomeHero() {
             imageRef.current,
             trustStripRef.current,
           ],
-          { opacity: 1, y: 0, x: 0 }
+          { opacity: 1, y: 0, x: 0 },
         );
         return;
       }
@@ -55,7 +54,7 @@ export default function HomeHero() {
           buttonGroupRef.current,
           trustStripRef.current,
         ],
-        { opacity: 0, y: 20 }
+        { opacity: 0, y: 20 },
       );
       gsap.set(imageRef.current, { opacity: 0, x: 40 });
 
@@ -76,7 +75,7 @@ export default function HomeHero() {
             duration: 0.45,
             stagger: 0.05,
           },
-          "-=0.1"
+          "-=0.1",
         )
         .to(
           subheadingRef.current,
@@ -85,7 +84,7 @@ export default function HomeHero() {
             y: 0,
             duration: 0.45,
           },
-          "-=0.15"
+          "-=0.15",
         )
         .to(
           buttonGroupRef.current,
@@ -94,7 +93,7 @@ export default function HomeHero() {
             y: 0,
             duration: 0.45,
           },
-          "-=0.1"
+          "-=0.1",
         )
         .to(
           imageRef.current,
@@ -103,7 +102,7 @@ export default function HomeHero() {
             x: 0,
             duration: 0.65,
           },
-          "-=0.45"
+          "-=0.45",
         )
         .to(
           trustStripRef.current,
@@ -112,10 +111,10 @@ export default function HomeHero() {
             y: 0,
             duration: 0.45,
           },
-          0.8
+          0.8,
         );
     },
-    { scope: sectionRef }
+    { scope: sectionRef },
   );
 
   return (
@@ -124,8 +123,8 @@ export default function HomeHero() {
       className="min-h-svh bg-[#1B3A6B] px-4 pb-12 pt-32 text-white sm:px-6 md:pb-16 md:pt-36 lg:px-8 lg:pb-24 lg:pt-40"
     >
       <div className="mx-auto flex min-h-[calc(100svh-8rem)] max-w-7xl flex-col justify-between gap-10">
-        <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
-          <div>
+        <div className="grid items-center gap-12 min-w-0 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:gap-16">
+          <div className="min-w-0">
             <p
               ref={eyebrowRef}
               className="text-xs font-semibold uppercase tracking-widest text-[#F97316]"
@@ -160,13 +159,13 @@ export default function HomeHero() {
             >
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center rounded-lg bg-[#F97316] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:scale-[1.04] hover:bg-[#E86610]"
+                className="inline-flex w-full items-center justify-center rounded-lg bg-[#F97316] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:scale-[1.04] hover:bg-[#E86610] sm:w-auto"
               >
                 Get a Free Inspection
               </Link>
               <a
                 href="tel:+15125550199"
-                className="inline-flex items-center justify-center rounded-lg border border-white px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white hover:text-[#1B3A6B]"
+                className="inline-flex w-full items-center justify-center rounded-lg border border-white px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-white hover:text-[#1B3A6B] sm:w-auto"
               >
                 Call Us Now
               </a>
@@ -175,7 +174,7 @@ export default function HomeHero() {
 
           <div
             ref={imageRef}
-            className="relative overflow-hidden rounded-2xl border border-white/10 shadow-[0_28px_60px_rgba(15,37,68,0.28)]"
+            className="relative min-w-0 overflow-hidden rounded-2xl border border-white/10 shadow-[0_28px_60px_rgba(15,37,68,0.28)]"
           >
             <div className="absolute inset-y-0 left-0 z-10 hidden w-1/3 bg-linear-to-r from-[#1B3A6B] via-[#1B3A6B]/65 to-transparent lg:block" />
             <Image
@@ -184,8 +183,8 @@ export default function HomeHero() {
               width={1200}
               height={900}
               priority
-              sizes="(min-width: 1024px) 45vw, 100vw"
-              className="h-full min-h-90 w-full object-cover"
+              sizes="(min-width: 1024px) 45vw, 85vw"
+              className="aspect-[4/3] w-full object-cover"
             />
           </div>
         </div>

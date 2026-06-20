@@ -12,6 +12,7 @@ import {
   CheckCircle2,
   Phone,
 } from "lucide-react";
+import * as LucideIcons from "lucide-react";
 import CTASection from "@/components/CTASection";
 import ReviewCard from "@/components/shared/ReviewCard";
 import {
@@ -269,7 +270,7 @@ function IncludedSection({ service }) {
 
         <div className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {service.included.map((item, index) => {
-            const Icon = item.icon;
+            const Icon = LucideIcons[item.icon] ?? CheckCircle2;
 
             return (
               <article
@@ -698,7 +699,7 @@ function RelatedServices({ service }) {
         </h3>
         <div className="mt-8 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {relatedServices.map((item) => {
-            const Icon = item.included[0]?.icon ?? CheckCircle2;
+            const Icon = LucideIcons[item.included[0]?.icon] ?? CheckCircle2;
 
             return (
               <Link

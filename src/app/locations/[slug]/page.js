@@ -7,8 +7,9 @@ export function generateStaticParams() {
   return locationPages.map((location) => ({ slug: location.slug }));
 }
 
-export function generateMetadata({ params }) {
-  const location = locationPageMap[params.slug];
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const location = locationPageMap[slug];
 
   if (!location) {
     return {};
@@ -18,13 +19,14 @@ export function generateMetadata({ params }) {
     title: `Roofing Company in ${location.city}, ${location.state} | Summit Roofing Co.`,
     description: `Summit Roofing Co. provides roofing services in ${location.city}, ${location.state} with local expertise, fast response, and free inspections for homeowners.`,
     alternates: {
-      canonical: `${siteUrl}/locations/${location.slug}`,
+      canonical: `${siteUrl}/locations/${slug}`,
     },
   };
 }
 
-export default function LocationPage({ params }) {
-  const location = locationPageMap[params.slug];
+export default async function LocationPage({ params }) {
+  const { slug } = await params;
+  const location = locationPageMap[slug];
 
   if (!location) {
     notFound();
@@ -47,7 +49,7 @@ export default function LocationPage({ params }) {
     },
     areaServed: [location.city, ...location.nearbyAreas],
     priceRange: "$$",
-    url: `${siteUrl}/locations/${location.slug}`,
+    url: `${siteUrl}/locations/${slug}`,
   };
 
   return (
